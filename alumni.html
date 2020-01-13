@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MAVIA - Register, Reservation, Questionare, Reviews form wizard">
+    <meta name="author" content="Ansonika">
+    <title>Alumni | Cambrian School & College</title>
+
+    <!-- Favicons-->
+    <link rel="shortcut icon" href="http://cambrian.edu.bd/alumni/assets/img/favicon.png" type="image/x-icon">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+    <!-- GOOGLE WEB FONT -->
+    <link href="css/css.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
+
+    <!-- BASE CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/alumni.css">
+    <link href="css/responsive.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    
+
+
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <a href="http://cambrian.edu.bd/alumni"><img src="img/logo.png" class="img-responsive"></a>
+            </div>
+
+            <div class="col-md-8">
+                <p class="address">Contacts Us: Cambrian School & College,
+                    Plot 2, Gulshan Circle 2, Dhaka.
+                    Mobile : 01720-557180,
+                    E-mail : info@cambrian.edu.bd</p>
+            </div>
+
+            <div class="col-md-2">
+                <div id="social">
+                    <ul>
+                        <li><a class="f-icon" href="https://www.facebook.com/DigitalCambrian/" target="_blank">icon</a></li>
+                        <li>
+                            <a href="http://cambrian.edu.bd/alumni/login/user_login"><button type="button" class="btn btn_sign">Login</button> </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /social -->
+            </div>
+
+        </div>
+    </div>
+    <!-- container -->
+</header>
+<!-- End Header -->
+
+<main>
+
+    <div class="container">
+        <div class="row">
+            <img src="img/banner_02.jpg" class="img-responsive">
+        </div>
+    </div>
+
+    <div id="form_container">
+        <div class="row">
+            <div class="col-md-5">
+                <div id="left_form">
+                    <figure><img src="img/registration_bg.svg" alt></figure>
+                    <h2>Cambrian</h2>
+                    <span class="less">School and College</span>
+                    <ul class="feture">
+                        <li>১) একে অপরের সাথে পরিচিতি হতে পারবে ।</li>
+
+                        <li>২) জব প্লেসমেন্ট এর জন্য সহযোগিতা করা হবে ।</li>
+
+                        <li>৩) বিভিন্ন দেশের কলেজ /বিশ্ববিদ্যালয়ে সার্টিফিকেট, ডিপ্লোমা, অনার্স, মাস্টার্স, পিএইচডি প্রোগ্রামে প্রায় ৩০০ বিষয়ে ভর্তি, স্কলারশিপ ও উচ্চ শিক্ষার সুযোগ করে দেওয়া হয় ।</li>
+
+                        <li>৪) ক্যামব্রিয়ান এ ছাত্ৰ /ছাত্রী ভর্তির ক্ষেত্রে স্কলারশিপ পাবে ।</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-7">
+
+                <div id="wizard_container">
+                    <div id="top-wizard">
+                        <div id="progressbar"></div>
+                    </div>
+                    <!-- /top-wizard -->
+                    <form method="POST" action="http://cambrian.edu.bd/alumni/student-signup" accept-charset="UTF-8" enctype="multipart/form-data"><input name="_token" type="hidden" value="WI3E6us0OWn7xjK46avnJ3Y7enW8AM6M6PGBKB3p">
+                        <div class="col-sm-12">
+                            <div class="form-group resg">
+                                <label>Student Name</label>
+                                <input type="text" name="name" placeholder="Enter Your Full Name Here.." class="form-control" required>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4 form-group">
+                                    <label>CAM ID Number</label>
+                                    <input type="text" name="camid" placeholder="Enter Your Cambrian ID Here.." class="form-control" required>
+                                </div>
+                                <div class="col-sm-4 form-group">
+                                    <label>Email</label>
+                                    <input type="email" name="email" placeholder="Enter Email Address Here.." class="form-control" required>
+                                </div>
+                                <div class="col-sm-4 form-group">
+                                    <label>Phone Number</label>
+                                    <input type="text" name="phone" placeholder="Enter Phone Number Here.." class="form-control" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 form-group forma">
+                                    <label>Group</label>
+                                    <select class="form-control" name="group">
+                                        <option>Select your Group</option>
+                                        <option>Science</option>
+                                        <option>Business</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <label>Date of Birthday</label>
+                                    <div class="form-group">
+                                        <div id="filterDate2">
+                                            <div class="input-group date" data-date-format="yyyy-mm-dd">
+                                                <input type="text" name="dob" class="form-control" placeholder="yyyy-mm-dd">
+                                                <div class="input-group-addon">
+                                                    <span class="icon-calendar"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 form-group">
+                                    <label>Present/Last Educational Institute</label>
+                                    <input type="text" name="plei" placeholder="Enter Your Last Educational Institute Name Here.." class="form-control">
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <label>Occupation</label>
+                                    <input type="text" name="occupation" placeholder="Enter Your Occupation Here.." class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 form-group">
+                                    <label>Last Education Level of Cambrian</label><br>
+                                    <select class="form-control" name="lelc">
+                                        <option>Select your Education</option>
+                                        <option>JSC</option>
+                                        <option>SSC</option>
+                                        <option>HSC</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3 form-group">
+                                    <label>Campus</label>
+                                    <select class="form-control" name="campus">
+                                        <option>Select Campus</option>
+                                        <option>Baridhara</option>
+                                        <option>Nodda</option>
+                                        <option>Bhavan - 07</option>
+                                        <option>Chittagong</option>
+                                        <option>Gulshan</option>
+                                        <option>Jatrabari</option>
+                                        <option>Keranigonj</option>
+                                        <option>Lalmatia</option>
+                                        <option>Mirpur</option>
+                                        <option>Uttara</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-3 form-group">
+                                    <label>Year</label>
+                                    <input type="text" name="year" placeholder="Enter Year Here.." class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 form-group forma">
+                                    <label>District</label>
+                                    <select id="country" class="form-control" name="district">
+                                        <option>Select your Home District</option>
+                                        <option>Barisal</option>
+                                        <option>Bhola</option>
+                                        <option>Bandarban</option>
+                                        <option>Brahmanbaria</option>
+                                        <option>Bagerhat</option>
+                                        <option>Bogra</option>
+                                        <option>Chandpur</option>
+                                        <option>Chapainawabganj</option>
+                                        <option>Chittagong</option>
+                                        <option>Comilla</option>
+                                        <option>Cox's Bazar</option>
+                                        <option>Chuadanga</option>
+                                        <option>Dhaka</option>
+                                        <option>Dinajpur</option>
+                                        <option>Feni</option>
+                                        <option>Faridpur</option>
+                                        <option>Gazipur</option>
+                                        <option>Gopalganj</option>
+                                        <option>Gaibandha</option>
+                                        <option>Habiganj</option>
+                                        <option>Jhalokati</option>
+                                        <option>Jessore</option>
+                                        <option>Jhenaidah</option>
+                                        <option>Jamalpur</option>
+                                        <option>Joypurhat</option>
+                                        <option>Khagrachhari</option>
+                                        <option>Kurigram</option>
+                                        <option>Khulna</option>
+                                        <option>Kushtia</option>
+                                        <option>Kishoreganj</option>
+                                        <option>Lakshmipur</option>
+                                        <option>Lalmonirhat</option>
+                                        <option>Madaripur</option>
+                                        <option>Manikganj</option>
+                                        <option>Munshiganj</option>
+                                        <option>Mymensingh</option>
+                                        <option>Magura</option>
+                                        <option>Moulvibazar</option>
+                                        <option>Meherpur</option>
+                                        <option>Narail</option>
+                                        <option>Narayanganj</option>
+                                        <option>Narsingdi</option>
+                                        <option>Netrakona</option>
+                                        <option>Naogaon</option>
+                                        <option>Natore</option>
+                                        <option>Nilphamari</option>
+                                        <option>Noakhali</option>
+                                        <option>Pabna</option>
+                                        <option>Panchagarh</option>
+                                        <option>Patuakhali</option>
+                                        <option>Pirojpur</option>
+                                        <option>Rajbari</option>
+                                        <option>Rangamati</option>
+                                        <option>Rajshahi</option>
+                                        <option>Rangpur</option>
+                                        <option>Sherpur</option>
+                                        <option>Satkhira</option>
+                                        <option>Shariatpur</option>
+                                        <option>Sirajgonj</option>
+                                        <option>Sunamganj</option>
+                                        <option>Sylhet</option>
+                                        <option>Tangail</option>
+                                        <option>Thakurgaon</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-6 form-group">
+                                    <label>Upload Your Picture</label>
+                                    <input type="file" name="picture" class="form-control" placeholder="Choose a file...">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn_coun center-block">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /Wizard container -->
+            </div>
+        </div><!-- /Row -->
+    </div><!-- /Form_container -->
+</main>
+
+
+<footer id="home" class="clearfix">
+    <p>Copyright &copy;2018 BSB - <a href="http://cambrian.edu.bd/" target="_blank">Cambrian Education Group</a>. All Rights Reserved</p>
+    <ul>
+        <li><a href="http://cambrian.edu.bd/" class="animated_link" target="_blank">Cambrian School and College Website</a></li>
+        <li><a href="http://cambrian.edu.bd/contactus.html" class="animated_link" target="_blank">Contacts</a></li>
+    </ul>
+</footer>
+<!-- end footer-->
+</body>
+
+</html>

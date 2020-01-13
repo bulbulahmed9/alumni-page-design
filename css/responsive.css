@@ -1,0 +1,160 @@
+@media (max-width:1366px) {
+    header {
+        padding: 15px 0px 0px 0px;
+        border-bottom: 1px solid #d9e1e6;
+    }
+
+    .address {
+        font-size: 18px!important;
+        text-align: center;
+        padding-top: 7px;
+        color: #000000;
+        font-family: roboto_light;
+    }
+
+    #social ul li {
+        float: left;
+        margin: 7px 5px 10px 0px;
+        list-style: none;
+    }
+
+    .main_box{
+        padding: 40px 0px;
+    }
+}
+
+@media (max-width:1024px) {
+    #form_container,
+    footer#home {
+        width: 800px;
+    }
+}
+
+@media (max-width:991px) {
+    #left_form,
+    #wizard_container {
+        min-height: inherit;
+    }
+    #form_container {
+        width: auto;
+        margin-top: 0;
+    }
+    #form_container .row {
+        margin: 0;
+    }
+    footer#home {
+        width: 100%;
+        padding: 0 30px;
+    }
+    #left_form {
+        text-align: left;
+        padding: 30px;
+    }
+    #left_form img {
+        float: left;
+        margin-right: 30px;
+    }
+    a#more_info {
+        left: auto;
+        right: 30px;
+    }
+    #middle-wizard {
+        padding: 30px 30px 120px;
+    }
+}
+
+@media (max-width:767px) {
+    .margin_60,
+    .margin_60_35 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    #form_container .row>[class*=col-] {
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+    h1.main_title,
+    h2.main_title {
+        font-size: 32px;
+    }
+    h1.main_title span,
+    h2.main_title span {
+        font-size: 18px
+    }
+    p.lead.styled {
+        font-size: 16px;
+    }
+    #left_form img {
+        float: none;
+        margin-right: 0;
+        width: 100px;
+        height: auto;
+    }
+    .margin_30 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .add_bottom_60 {
+        margin-bottom: 30px;
+    }
+    #bottom-wizard {
+        right: 35px;
+    }
+
+    #social{
+        float: left;
+    }
+
+    #social ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    #social ul li {
+        padding-bottom:30px!important;
+    }
+}
+
+@media (max-width:480px) {
+
+    #left_form h2 {
+        font-size: 60px!important;
+        padding-bottom: 10px!important;
+    }
+
+    .less {
+        font-size: 28px;
+    }
+
+    #social ul li {
+        padding-bottom: 30px!important;
+    }
+
+    .rating,
+    label.rating_type {
+        float: left;
+        display: block;
+    }
+    label.rating_type {
+        width: 100%;
+    }
+    #map_contact {
+        height: 300px;
+    }
+
+    #social{
+        float: left;
+    }
+
+    #social ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    #social ul li {
+        float: left;
+        margin: 0px;
+        list-style: none;
+    }
+
+}
